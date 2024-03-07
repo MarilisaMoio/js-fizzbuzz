@@ -9,18 +9,23 @@
         //condizioni per fizz, buzz e fizzbuzz
         let print = i;
 
+        const newDiv = document.createElement("div");
+
+        console.log(newDiv)
+
         if (i % 3 === 0 && i % 5 === 0){
             print = "FizzBuzz";
+            newDiv.classList.add("orange");
         } else if (i % 3 === 0 ) {
-            print = "Fizz";
+            print = '<img src="img/fizz.webp" alt="fizz">'
         } else if (i % 5 === 0 ) {
-            print = "Buzz";
+            print = '<img src="img/buzz.webp" alt="buzz">'
         }
 
         //prepara il div
-        let divContent = `<div>${print}</div>`;
+        newDiv.innerHTML = print;
 
-        container.innerHTML += divContent;
+        container.append(newDiv);
     }
 
     
