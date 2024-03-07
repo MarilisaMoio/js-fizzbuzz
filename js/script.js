@@ -1,7 +1,7 @@
 //milestone 1: basic FizzBuzz; milestone 2: aggiungere gli elementi nel DOM; milestone 3: aggiungere stile.
 
 //scrivere un ciclo for che fornisca un numero da 1 a 100
-    for (let i = 1; i <= 15; i++){
+    for (let i = 1; i <= 100; i++){
 
         let print = i;
 
